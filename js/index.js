@@ -151,8 +151,8 @@ for (let i = 0; i < themeColors.length; i++) {
 //!=====Carousel ==================================
 const cards = Array.from(document.querySelectorAll(".testimonial-card"));
 // console.log(cards);
-console.log(cards[0].offsetWidth);
-console.log(cards.length);
+// console.log(cards[0].offsetWidth);
+// console.log(cards.length);
 const carousel = document.getElementById("testimonials-carousel");
 
 let currentIndex = 0;
