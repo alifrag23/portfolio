@@ -148,9 +148,15 @@ for (let i = 0; i < themeColors.length; i++) {
     document.documentElement.style.setProperty("--color-accent", color);
   });
 }
+document
+  .getElementById("reset-settings")
+  .addEventListener("click", function (e) {
+    document.documentElement.style.setProperty("--color-primary", "#6366f1");
+    document.documentElement.style.setProperty("--color-secondary", "#6366f1");
+    document.documentElement.style.setProperty("--color-accent", "#6366f1");
+  });
 //!=====Carousel ==================================
 const cards = Array.from(document.querySelectorAll(".testimonial-card"));
-// console.log(cards);
 // console.log(cards[0].offsetWidth);
 // console.log(cards.length);
 const carousel = document.getElementById("testimonials-carousel");
